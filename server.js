@@ -42,7 +42,7 @@ passport.use(
   new GoogleStrategy({
       clientID: keys.google.clientID,
       clientSecret: keys.google.clientSecret,
-      callbackURL: 'http://localhost:5000/auth/google/callback'
+      callbackURL: 'https://blooming-anchorage-84894.herokuapp.com/auth/google/callback'
   }, (accessToken, refreshToken, profile, done) => {
       // passport callback function
       //check if user already exists in our db with the given profile ID
